@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(145, 145, 145);
+    
+}
+
+.cabecalho{
+    background-color: rgb(94, 93, 93);
+    margin: 3px;
+    height: 95px;
+    width: 99%;
+    border-radius: 10px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+}
+
+.conteudo_primario {
+    background-color: rgb(94, 93, 93);
+    margin: 3px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+ .container2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+ }
+
+
+.conteudo_secundario {
+    background-color: rgb(94, 93, 93);
+    margin: 3px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.conteudo_terciario {
+    background-color: rgb(94, 93, 93);
+    margin: 3px;
+    height: 135px;
+    width: 99%;
+    border-radius: 10px;
+}
+
+.rodape {
+    background-color: rgb(94, 93, 93);
+    margin: 3px;
+    height: 45px;
+    width: 99%;
+    border-radius: 10px;
+}
