@@ -107,6 +107,12 @@ main img{
     width: 100%;
 }
 
+.pequena{
+    height: 500%;
+    width: 50%;
+    margin: auto;
+}
+
 .video{
     background-color: var(--cor4);
     padding: 20px;
