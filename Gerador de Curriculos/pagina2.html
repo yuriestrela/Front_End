@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2 - gerar curriculo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <p>Dados Profissionais</p>
+    <form class="dados_profissionais" onsubmit="salvar_informacoes2(event)">
+        <label for="objetivo">Objetivo:</label>
+        <input type="text" id="objetivo" name="objetivo" required>
+
+        <label for="experiencia">Experiência Profissional:</label>
+        <input type="text" id="experiencia" name="experiencia" required>
+
+        <label for="qualificacao_profissional">Qualificação Profissional:</label>
+        <input type="text" id="qualificacao_profissional" name="qualificacao_profissional" required>
+
+        <button type="button" onclick="voltar()">Voltar</button>
+        <button type="submit">Avançar</button>
+    </form>
+    
+</body>
+</html>

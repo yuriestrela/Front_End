@@ -1,0 +1,20 @@
+h1{
+    margin: 0;
+    padding: 50px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #0B03F5, #010040, #000000);
+    font-size: 3em;
+    color: #F2F2F2;
+}
+
+.form1{
+    background-color: aliceblue;
+    
+}
+
+.form1 label, .form1 input {
+    display: block;
+    margin-bottom: 10px;
+}
