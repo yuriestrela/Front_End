@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +9,41 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
 
-    <h1>Gerador de Currículo</h1>
+    <header>
+        <nav>
+            <img src="imagem/cv_icon.png" alt="Icone CV" style="height: 40px; width: 40px;">
+            <a href="index.html">Home</a>
+            <a href="#">Ferramentas</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+
     <h2>Para gerar seu currículo, preencha os dados a seguir!</h2>
 
-    <div class="form1">
-        <p>Dados Pessoais:  </p>
-        <form class="dados_pessoais" onsubmit="salvar_informacoes(event)">
+    <p>Dados Pessoais: </p>
+    <form class="dados_pessoais" onsubmit="salvar_informacoes(event)">
 
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade" required>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" required>
-        
-            <button type="submit">Avançar</button>
-        </form>
-        
-    </div>
-    
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
 
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
 
+        <button type="submit">Avançar</button>
+    </form>
 
-    
 </body>
+
 </html>

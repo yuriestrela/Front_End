@@ -8,16 +8,25 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="imagem/cv_icon.png" alt="Icone CV" style="height: 40px; width: 40px;">
+            <a href="index.html">Home</a>
+            <a href="#">Ferramentas</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+
     <p>Dados Profissionais</p>
     <form class="dados_profissionais" onsubmit="salvar_informacoes2(event)">
         <label for="objetivo">Objetivo:</label>
-        <input type="text" id="objetivo" name="objetivo" required>
+        <textarea name="objetivo" id="objetivo" cols="50" rows="10" required></textarea>
 
         <label for="experiencia">Experiência Profissional:</label>
-        <input type="text" id="experiencia" name="experiencia" required>
+        <textarea name="experiencia" id="experiencia" cols="50" rows="10" required></textarea>
 
         <label for="qualificacao_profissional">Qualificação Profissional:</label>
-        <input type="text" id="qualificacao_profissional" name="qualificacao_profissional" required>
+        <textarea name="qualificacao_profissional" id="qualificacao_profissional" cols="50" rows="10" required></textarea>
 
         <button type="button" onclick="voltar()">Voltar</button>
         <button type="submit">Avançar</button>

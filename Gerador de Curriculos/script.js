@@ -1,7 +1,7 @@
 function salvar_informacoes(event) {
     event.preventDefault(); // Impede o envio do formulário
 
-    // Salva as informações em algum lugar (por exemplo, localStorage)
+
     var nome = document.getElementById('name').value;
     var idade = document.getElementById('idade').value;
     var email = document.getElementById('email').value;
@@ -14,7 +14,6 @@ function salvar_informacoes(event) {
     localStorage.setItem('telefone', telefone);
     localStorage.setItem('endereco', endereco);
 
-    // Redireciona para a próxima página
     window.location.href = "pagina2.html";
 }
 
