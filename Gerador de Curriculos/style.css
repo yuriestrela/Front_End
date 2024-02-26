@@ -27,18 +27,6 @@ nav > a:hover{
     color:#010040;
 }
 
-
-h1{
-    margin: 0;
-    padding: 50px;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #0B03F5, #010040, #000000);
-    font-size: 3em;
-    color: #F2F2F2;
-}
-
 .dados_pessoais{
     background-color: aliceblue;
     
@@ -59,6 +47,23 @@ h1{
     margin-bottom: 10px;
 }
 
+.experiencia_profissional label, .experiencia_profissional input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.qualificacao_profissional label, .qualificacao_profissional input {
+    display: block;
+    margin-bottom: 10px;
+
+}
+input{
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -66,4 +71,13 @@ input::-webkit-inner-spin-button {
 
 textarea{
     resize:none;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+#nivel-descricao{
+    height: 200px;
+    width: 500px;
+    background-color: aqua;
+    color: #000000;
 }
