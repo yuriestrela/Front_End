@@ -52,11 +52,19 @@ nav > a:hover{
     margin-bottom: 10px;
 }
 
-.qualificacao_profissional label, .qualificacao_profissional input {
+.qualificacao_profissional label{
     display: block;
     margin-bottom: 10px;
 
 }
+
+.alinhar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
 input{
     width: 210px;
     height: 30px;

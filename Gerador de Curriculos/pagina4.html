@@ -22,15 +22,15 @@
     <form class="qualificacao_profissional" onsubmit="salvar_informacoes4(event)">
 
         <h2>Qualificação Profissional</h2>
-        <label for="qualificacao_profissional">Competencias</label>
-        <input type="text" id="qualificacao_profissional" name="qualificacao_profissional">
-
-
-        <label for="nivel_qualificacao">Nível</label>
-        <input type="range" id="nivel_qualificacao" name="nivel_qualificacao" min="1" max="5">
-        <output for="nivel_qualificacao" id="nivel-output_qualificacao"></output>
-
-        <div id="nivel-descricao"></div>
+        <div class="adicionar_competencia">
+            <label for="qualificacao_profissional">Competencias</label>
+            <input type="text" id="qualificacao_profissional" name="qualificacao_profissional">
+            <label for="nivel_qualificacao">Nível</label>
+            <div class="alinhar">
+                <input type="range" id="nivel_qualificacao" name="nivel_qualificacao" min="0" max="5">
+                <output for="nivel_qualificacao" id="nivel-output_qualificacao"></output>
+            </div>
+        </div>
 
         <button type="button" onclick="voltar()">Voltar</button>
         <button type="submit">Avançar</button>

@@ -50,27 +50,33 @@ function salvar_informacoes3(event) {
     window.location.href = "pagina4.html"
 }
 
-// Tentando fazer a barrinha que retorna o nível da competência //
+// o "DOMContentLoaded" significa que o código JavaScript só será executado depois que todos os elementos do DOM forem carregados
 
-const nivelOutput = document.getElementById('nivel-output_qualificacao');
-const descricao = document.getElementById('descricao');
-const nivelDescricao = document.getElementById('nivel-descricao');
+document.addEventListener('DOMContentLoaded', function() {
+    const nivelOutput = document.getElementById('nivel-output_qualificacao');
+    const nivelDescricao = document.getElementById('nivel-descricao');
 
-const niveis = {
-    1: 'Iniciante',
-    2: 'Intermediário',
-    3: 'Bom',
-    4: 'Muito bom',
-    5: 'Excelente',
-};
+    const niveis = {
+        0: 'Escolha uma opção',
+        1: 'Iniciante',
+        2: 'Intermediário',
+        3: 'Bom',
+        4: 'Muito bom',
+        5: 'Excelente',
+    };
 
-document.getElementById('nivel_qualificacao').addEventListener('input', function () {
-    const nivel_qualificacao = this.value;
-    nivelOutput.textContent = niveis[nivel_qualificacao];
-    descricao.value = niveis[nivel_qualificacao]
+    document.getElementById('nivel_qualificacao').addEventListener('input', function () {
+        const nivel_qualificacao = this.value;
+        nivelOutput.textContent = niveis[nivel_qualificacao];
+        nivelDescricao.textContent = niveis[nivel_qualificacao]; 
+    });
+ 
+    // Valor que inicia
+
+    document.getElementById('nivel_qualificacao').value = 0;
+    nivelOutput.textContent = niveis[0];
 });
 
-// fim da tentativa //
 
 function salvar_informacoes4(event){
     event.preventDefault();
@@ -82,9 +88,10 @@ function salvar_informacoes4(event){
    localStorage.setItem('nivel_qualificacao', nivel_qualificacao);
 
    window.location.href = "pagina5.html"
-}
+};
 
 
 function voltar() {
     window.history.back();
 }
+
