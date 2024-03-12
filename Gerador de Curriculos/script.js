@@ -50,46 +50,47 @@ function salvar_informacoes3(event) {
     window.location.href = "pagina4.html"
 }
 
-// o "DOMContentLoaded" significa que o código JavaScript só será executado depois que todos os elementos do DOM forem carregados
-
-document.addEventListener('DOMContentLoaded', function() {
-    const nivelOutput = document.getElementById('nivel-output_qualificacao');
-    const nivelDescricao = document.getElementById('nivel-descricao');
-
-    const niveis = {
-        0: 'Escolha uma opção',
-        1: 'Iniciante',
-        2: 'Intermediário',
-        3: 'Bom',
-        4: 'Muito bom',
-        5: 'Excelente',
-    };
-
-    document.getElementById('nivel_qualificacao').addEventListener('input', function () {
-        const nivel_qualificacao = this.value;
-        nivelOutput.textContent = niveis[nivel_qualificacao];
-        nivelDescricao.textContent = niveis[nivel_qualificacao]; 
-    });
- 
-    // Valor que inicia
-
-    document.getElementById('nivel_qualificacao').value = 0;
-    nivelOutput.textContent = niveis[0];
-});
-
-
 function salvar_informacoes4(event){
     event.preventDefault();
 
-    let qualificacao_profissional = document.getElementById('qualificacao_profissional').value;
-    let nivel_qualificacao = document.getElementById('nivel_qualificacao').value;
-   
-   localStorage.setItem('qualificacao_profissional', qualificacao_profissional);
-   localStorage.setItem('nivel_qualificacao', nivel_qualificacao);
+    let competencia = document.getElementById('competencia').value;
 
-   window.location.href = "pagina5.html"
+
+    localStorage.setItem('competencia', competencia);
+
+    window.location.href = "pagina5.html"
 };
 
+function salvar_informacoes5(event){
+    event.preventDefault();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const nivelOutput = document.getElementById('nivel-output_idioma');
+        const nivelDescricao = document.getElementById('nivel-descricao');
+    
+        const niveis = {
+            0: 'Escolha uma opção',
+            1: 'Iniciante',
+            2: 'Básico',
+            3: 'Pré Intermediário',
+            4: 'Intermediário',
+            5: 'Avançado',
+            6: 'Fluente'
+        };
+    
+        document.getElementById('nivel_idioma').addEventListener('input', function () {
+            const nivel_idioma = this.value;
+            nivelOutput.textContent = niveis[nivel_idioma];
+            nivelDescricao.textContent = niveis[nivel_idioma]; 
+        });
+     
+        // Valor que inicia
+    
+        document.getElementById('nivel_qualificacao').value = 0;
+        nivelOutput.textContent = niveis[0];
+    });
+
+}
 
 function voltar() {
     window.history.back();

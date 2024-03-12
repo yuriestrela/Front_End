@@ -21,6 +21,32 @@
         </nav>
     </header>
 
+    <form class="qualificacao_profissional" onsubmit="salvar_informacoes5(event)">
+        <label for="idioma"></label>
+        <select name="idioma" id="idioma">
+            <option value="" disabled selected style="display:none;">Idioma</option>
+            <option value="Inglês">Inglês</option>
+            <option value="Espanhol">Espanhol</option>
+            <option value="Francês">Francês</option>
+            <option value="Alemão">Alemão</option>
+            <option value="Italiano">Italiano</option>
+            <option value="Português">Português</option>
+            <option value="Chinês">Chinês</option>
+            <option value="Japonês">Japonês</option>
+            <option value="Russo">Russo</option>
+            <option value="Árabe">Árabe</option>
+        </select>
+        
+            <div class="nivel_idioma">
+                <label for="nivel_idioma">Nível</label>
+                <div class="alinhar">
+                    <input type="range" id="nivel_idioma" name="nivel_idioma" min="0" max="6">
+                    <output for="nivel_idioma" id="nivel-output_idioma"></output>
+                </div>
+            </div>
+
+
+    </form>
     <button type="button" onclick="voltar()">Voltar</button>
 
 
