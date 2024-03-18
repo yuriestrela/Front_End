@@ -21,33 +21,145 @@
         </nav>
     </header>
 
-    <form class="qualificacao_profissional" onsubmit="salvar_informacoes5(event)">
-        <label for="idioma"></label>
-        <select name="idioma" id="idioma">
-            <option value="" disabled selected style="display:none;">Idioma</option>
-            <option value="Inglês">Inglês</option>
-            <option value="Espanhol">Espanhol</option>
-            <option value="Francês">Francês</option>
-            <option value="Alemão">Alemão</option>
-            <option value="Italiano">Italiano</option>
-            <option value="Português">Português</option>
-            <option value="Chinês">Chinês</option>
-            <option value="Japonês">Japonês</option>
-            <option value="Russo">Russo</option>
-            <option value="Árabe">Árabe</option>
-        </select>
-        
-            <div class="nivel_idioma">
-                <label for="nivel_idioma">Nível</label>
-                <div class="alinhar">
-                    <input type="range" id="nivel_idioma" name="nivel_idioma" min="0" max="6">
-                    <output for="nivel_idioma" id="nivel-output_idioma"></output>
-                </div>
-            </div>
+    <h2>Cursos Extra Curriculares e Idiomas</h2>
+    <form class="idioma/curso" onsubmit="salvar_informacoes5(event)">
 
+        <label for="curso">Nome do Curso</label>
+        <input type="text" id="curso" name="curso">
+        <label for="nomeCurso">Nome da Escola</label>
+        <input type="nomeCurso" id="nomeCurso" name="nomeCurso">
+        <div class="data_inicio_curso">
+            <p>Data de Início</p>
+            <label for="mes_inicio_curso"></label>
+            <select name="mes_inicio_curso" id="mes_inicio_curso">
+                <option value="" disabled selected style="display:none;">Mês</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <label for="ano_inicio_curso"></label>
+            <select name="ano_inicio_curso" id="ano_inicio_curso">
+                <option value="" disabled selected style="display:none;">Ano</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+        </div>
+
+        <div class="data_termino_curso">
+            <p>Data de Término</p>
+            <label for="mes_termino_curso"></label>
+            <select name="mes_termino_curso" id="mes_termino_curso">
+                <option value="" disabled selected style="display:none;">Mês</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <label for="ano_termino_curso"></label>
+            <select name="ano_termino_curso" id="ano_termino_curso">
+                <option value="" disabled selected style="display:none;">Ano</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
+        </div>
+
+        <label for="idioma">Idioma</label>
+        <textarea name="idioma" id="idioma" cols="50" rows="10"></textarea>
+
+        <button type="button" onclick="voltar()">Voltar</button>
+        <button type="submit">Visualisar Currículo</button>
 
     </form>
-    <button type="button" onclick="voltar()">Voltar</button>
+
 
 
 </body>
