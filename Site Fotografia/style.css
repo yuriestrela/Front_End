@@ -1,0 +1,37 @@
+body{
+    background-color: #F2D1B3;
+    color: #734E40;
+}
+
+header{
+    background-color: #BF8563;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.container{
+    padding-top: 16px;
+}
+
+#sobre-nos{
+    padding-top: 20px;
+}
+
+.card-body{
+    background-color: #D9B5A0;
+    border: 1px solid black;
+
+}
+
+.btn{
+    background-color: #734E40;
+    color: #ffff;
+    border: black;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    background-color: #8C4126;
+}
